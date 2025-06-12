@@ -61,15 +61,15 @@ export default function Aside() {
           </ul>
 
           {/* Parte de Baixo: Ícones de configurações e idioma */}
-          <div className="flex-shrink-0 flex justify-center p-4 space-x-4 w-full bg-black z-20 border-console-blr">
+          <div className="flex-shrink-0 flex justify-center p-4 space-x-4 w-full bg-black z-20 ">
             {/* Ícone de configurações 1 */}
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-[#7733E6] rounded-lg transition duration-75 hover:bg-lime-400 hover:text-black"
+              className="flex items-center p-2 text-base font-normal text-[#7733E6] rounded-lg transition duration-75 hover:bg-purple-900 hover:text-black"
             >
               <svg
                 aria-hidden="true"
-                className="w-6 h-6 svg-retro"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +81,11 @@ export default function Aside() {
             <a
               href="#"
               data-tooltip-target="tooltip-settings"
-              className="flex items-center p-2 text-base font-normal text-[#7733E6] rounded-lg transition duration-75 hover:bg-lime-400 hover:text-black"
+              className="flex items-center p-2 text-base font-normal text-[#7733E6] rounded-lg transition duration-75 hover:bg-purple-900 hover:text-black"
             >
               <svg
                 aria-hidden="true"
-                className="w-6 h-6 svg-retro"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ export default function Aside() {
             <button
               type="button"
               data-dropdown-toggle="language-dropdown"
-              className="inline-flex justify-center p-2 text-[#7733E6] rounded cursor-pointer hover:text-black hover:bg-lime-400"
+              className="inline-flex justify-center p-2 text-[#7733E6] rounded cursor-pointer hover:text-black hover:bg-purple-900"
             >
               {/* SVG da bandeira dos EUA */}
               <svg

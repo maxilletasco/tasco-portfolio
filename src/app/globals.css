@@ -35,8 +35,6 @@ body {
   border-top: 2px solid theme("colors.lime.400"); /* Usando lime-400 nativo */
   border-left: 2px solid theme("colors.lime.400");
   border-right: 2px solid theme("colors.lime.400");
-  /* Simula a "duplicação" com um box-shadow */
-  box-shadow: -4px -4px 0 0 #7733e6, /* Seu roxo */ 4px 4px 0 0 #7733e6; /* Seu roxo */
 }
 
 /* Para a borda "dupla" do estilo console (bottom, left, right) */
@@ -49,32 +47,27 @@ body {
   box-shadow: -4px 4px 0 0 #7733e6, /* Seu roxo */ 4px -4px 0 0 #7733e6; /* Seu roxo */
 }
 
-/* Estilo base para os itens de navegação (Docs, Components, Help) */
 .nav-item-retro {
-  @apply px-4 py-2 text-lg font-normal rounded-none; /* Remova rounded-lg, use rounded-none */
-  color: #7733e6; /* Seu roxo */
+  @apply px-4 py-2 text-lg font-normal rounded-none;
+  color: #7733e6;
   position: relative;
-  display: block; /* Garante que o span seja um bloco para borda */
-  /* Border */
-  border-top: 2px solid #7733e6; /* Seu roxo */
+  display: block;
+
+  border-top: 2px solid #7733e6;
   border-left: 2px solid #7733e6;
   border-right: 2px solid #7733e6;
   border-bottom: 2px solid #7733e6;
 
-  /* Sombras para o efeito 3D (similar aos botões do Fullstack Open) */
-  box-shadow: -3px -3px 0 0 theme("colors.lime.400"),
-    /* lime-400 nativo */ 3px 3px 0 0 theme("colors.lime.400");
+  box-shadow: -3px -3px 0 0 #7733e6, 3px 3px 0 0 #7733e6;
 
-  transition: all 0.2s ease-in-out; /* Transição para o hover */
+  transition: all 0.2s ease-in-out;
 }
 
-/* Efeito Hover para os itens de navegação */
 .nav-item-retro:hover {
-  color: theme("colors.lime.400"); /* lime-400 nativo */
-  background-color: #7733e6; /* Seu roxo */
-  border-color: theme("colors.lime.400"); /* lime-400 nativo */
-  box-shadow: -3px -3px 0 0 #7733e6,
-    /* Inverte as sombras para seu roxo */ 3px 3px 0 0 #7733e6;
+  color: white;
+  background-color: #7733e6;
+  border-color: black;
+  box-shadow: -3px -3px 0 0 #7733e6, 3px 3px 0 0 #7733e6;
 }
 
 /* Cores para os SVGs na parte de baixo */
@@ -94,5 +87,5 @@ body {
   }
   50% {
     color: theme("colors.lime.400");
-  } /* Use theme() para lime-400 aqui */
+  }
 }
