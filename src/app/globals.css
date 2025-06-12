@@ -21,71 +21,7 @@
   }
 }
 
-/* globals.css */
-
-/* Cores básicas */
 body {
-  @apply bg-black text-[#7733E6]; /* Fundo preto puro e seu roxo direto no body */
+  @apply bg-[#240245]; /* Fundo preto puro e seu roxo direto no body */
   min-height: 100vh;
-}
-
-/* Para a borda "dupla" do estilo console (top, left, right) */
-.border-console-tlr {
-  position: relative;
-  border-top: 2px solid theme("colors.lime.400"); /* Usando lime-400 nativo */
-  border-left: 2px solid theme("colors.lime.400");
-  border-right: 2px solid theme("colors.lime.400");
-}
-
-/* Para a borda "dupla" do estilo console (bottom, left, right) */
-.border-console-blr {
-  position: relative;
-  border-bottom: 2px solid theme("colors.lime.400"); /* Usando lime-400 nativo */
-  border-left: 2px solid theme("colors.lime.400");
-  border-right: 2px solid theme("colors.lime.400");
-  /* Simula a "duplicação" com um box-shadow */
-  box-shadow: -4px 4px 0 0 #7733e6, /* Seu roxo */ 4px -4px 0 0 #7733e6; /* Seu roxo */
-}
-
-.nav-item-retro {
-  @apply px-4 py-2 text-lg font-normal rounded-none;
-  color: #7733e6;
-  position: relative;
-  display: block;
-
-  border-top: 2px solid #7733e6;
-  border-left: 2px solid #7733e6;
-  border-right: 2px solid #7733e6;
-  border-bottom: 2px solid #7733e6;
-
-  box-shadow: -3px -3px 0 0 #7733e6, 3px 3px 0 0 #7733e6;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.nav-item-retro:hover {
-  color: white;
-  background-color: #7733e6;
-  border-color: black;
-  box-shadow: -3px -3px 0 0 #7733e6, 3px 3px 0 0 #7733e6;
-}
-
-/* Cores para os SVGs na parte de baixo */
-.svg-retro {
-  fill: #7733e6; /* Preenche o SVG com seu roxo */
-}
-
-/* Animação do cursor - usar a cor lime-400 nativa */
-#consoleCursor {
-  animation: blink-caret 1s steps(2) infinite;
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    color: rgba(0, 0, 0, 0);
-  }
-  50% {
-    color: theme("colors.lime.400");
-  }
 }

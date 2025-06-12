@@ -30,14 +30,23 @@ export default function Aside() {
       {/* Aside principal com os estilos retrô */}
       <aside
         id="default-sidebar"
-        className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-black border-console-tlr"
+        className="fixed top-15 left-10 z-40 w-100 h-11/12 transition-transform -translate-x-full sm:translate-x-0 bg-[#240245]"
         aria-label="Sidenav"
       >
         {/* Div principal do conteúdo da sidebar */}
         <div className="overflow-y-auto py-5 px-3 h-full flex flex-col justify-between">
-          {/* Topo: Título "Tasco" */}
-          <div className="flex-shrink-0">
-            <h1 className="text-[#7733E6] p-2 text-2xl text-center">Tasco<span id="consoleCursor">|</span></h1>
+          <div className="flex-shrink-0 flex flex-col items-center">
+            {" "}
+            {/* 
+            <img
+              src="/photo.png"
+              className="rounded-full h-20 w-20 bg-fit"
+            ></img>{" "}
+             */}
+            <h1 className="text-gray-300 text-[45px] font-semibold text-center">
+              Maxille Tasco<span className="text-purple-500">.</span>
+            </h1>
+            <h2 className="text-gray-400 text-2xl font-medium ">Fullstack Developer</h2>
           </div>
 
           {/* Meio: Docs, Components, Help - Centralizados */}
